@@ -7,10 +7,8 @@ gulp.task('copy', function () {
         .pipe(gulp.dest('dest/html'));
 });
 
-gulp.task('build', function () {
-    gulp.run('copy');
-});
+gulp.task('build', [
+    'copy'
+]);
 
-gulp.task('default', function () {
-    gulp.run('build');
-});
+gulp.task('default', ['build']);
