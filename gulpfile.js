@@ -8,9 +8,11 @@ gulp.task('copy', function () {
         .pipe(gulp.dest('dest/html'));
 });
 
-gulp.task('build', [
-    'copy'
-]);
+gulp.task('build', ['copy'], function () {
+    gulp.src('src/ts/**/*.ts')
+        .pipe(tsc())
+        .pipe(gulp.dest('dest/js'));
+});
 
 gulp.task('test-build', ['build'], function () {
     gulp.src('test/src/ts/**/*.ts')
