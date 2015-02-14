@@ -1,5 +1,5 @@
 module PlantSimulator {
-    class Name {
+    export class Name {
         constructor(private value) {
         }
     }
