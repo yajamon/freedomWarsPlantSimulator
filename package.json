@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/yajamon/freedomWarsPlantSimulator/issues"
   },
-  "homepage": "https://github.com/yajamon/freedomWarsPlantSimulator"
+  "homepage": "https://github.com/yajamon/freedomWarsPlantSimulator",
+  "devDependencies": {
+    "gulp": "^3.8.11"
+  }
 }
