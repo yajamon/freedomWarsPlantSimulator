@@ -1,0 +1,16 @@
+{
+  "framework": "mocha+chai",
+  "src_files": [
+    "src/**/*.ts",
+    "test/**/*.ts"
+  ],
+  "serve_files":[
+    "test/dest/**/*.js"
+  ],
+  "launch_in_dev": [
+    "Chrome"
+  ],
+  "launch_in_ci":[
+    "PhantomJS"
+  ]
+}
