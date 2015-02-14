@@ -3,6 +3,6 @@ node_js:
   - iojs
 
 script:
-  - "npm test"
+  - "npm test ci"
 
 before_script:
