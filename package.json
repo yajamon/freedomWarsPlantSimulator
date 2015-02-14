@@ -4,6 +4,8 @@
   "description": "フリーダムウォーズの資源生産管理シミュレーター",
   "main": "gulpfile.js",
   "scripts": {
+    "gulp": "gulp",
+    "build": "gulp build",
     "pretest": "gulp test-build",
     "test": "testem"
   },
