@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/yajamon/freedomWarsPlantSimulator",
   "devDependencies": {
-    "gulp": "^3.8.11"
+    "gulp": "^3.8.11",
+    "testem": "^0.7.0-0"
   }
 }
