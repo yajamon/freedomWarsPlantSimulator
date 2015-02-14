@@ -1,0 +1,2 @@
+# freedomWarsPlantSimulator
+フリーダムウォーズの資源生産管理シミュレーター
