@@ -20,4 +20,8 @@ gulp.task('test-build', ['build'], function () {
         .pipe(gulp.dest('test/dest/js'));
 });
 
+gulp.task('watch', ['build'], function () {
+    gulp.watch('./src/**/*.ts', ['build']);
+});
+
 gulp.task('default', ['build']);

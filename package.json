@@ -5,6 +5,7 @@
   "main": "gulpfile.js",
   "scripts": {
     "gulp": "gulp",
+    "watch": "gulp watch",
     "build": "gulp build",
     "pretest": "gulp test-build",
     "test": "testem"
