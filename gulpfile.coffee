@@ -4,7 +4,7 @@ tsc  = require 'gulp-typescript'
 # Main task
 gulp.task 'default', ['build']
 
-gulp.task 'build', ['copy', 'typescript-build']
+gulp.task 'build', ['copy', 'ts-build']
 
 gulp.task 'copy', ()->
     gulp.src 'src/html/**'
@@ -12,7 +12,7 @@ gulp.task 'copy', ()->
 
 gulp.task 'watch', ['build'], ()->
     gulp.watch 'src/**/*.html', ['copy']
-    gulp.watch 'src/**/*.ts', ['typescript-build']
+    gulp.watch 'src/**/*.ts', ['ts-build']
 
 
 # Sub task
@@ -22,7 +22,7 @@ tscBuildOptions = {
     noImplicitAny: true,
 }
 
-gulp.task 'typescript-build', ()->
+gulp.task 'ts-build', ()->
     gulp.src 'src/ts/**/*.ts'
     .pipe tsc tscBuildOptions
     .pipe gulp.dest 'dest/js'
